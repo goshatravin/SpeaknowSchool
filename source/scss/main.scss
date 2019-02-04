@@ -1,0 +1,560 @@
+@import "colors";
+@import "libs";
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+html{
+    font-size: 16px;
+}
+// header
+header{
+    height: 100%;
+    background: $my_header;
+}
+.wrap-fixed{
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+.header__row{
+    align-items: center;
+    padding: 0.5rem 0.5rem;
+}
+
+.header__adress{
+    border-left: 1px solid $my_border;
+   
+}
+.adress__item{
+    text-align: center;
+    padding : 0.6rem 0;
+}
+.header__phone{
+    border-left: 1px solid $my_border;
+    border-right: 1px solid $my_border;
+}
+.phone__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.adress__text{
+    color: $main_title;
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-variant: small-caps;
+}
+.phone__number{
+    color: $main_title;
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-variant: small-caps;
+}
+.phone__item >*{
+    padding: 0.5rem;
+}
+.social__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social__item >*{
+    padding: 0.3rem;
+    max-width: 2rem;
+}
+//btn
+.btn__item{
+    background: $cream_bg;
+    height: 32.25rem;
+    width: 27rem;
+    position: fixed;
+    top: 25%;
+    left: 37%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+   
+}
+.open{
+    display:flex;
+}
+.callback_p{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    color: $main_title;
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-variant: small-caps;
+    
+}
+.newForm{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    
+    
+}
+.forminput{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid $main_title;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: none;
+
+}
+.btn_h3{
+    color: $main_title;
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-variant: small-caps; 
+}
+//  menu 
+.main_menu{
+   
+    height: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 0 13px 25px rgba(46, 46, 46, 0.2);
+}
+.row__menu-link{
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+}
+.row__menu-link:hover{
+  border-bottom: 3px solid white;
+  transition: 0.2s;
+}
+.menu_color-f{
+    background: $menu_green;
+}
+.menu_color-s{
+    background: $menu_color-s;
+}
+.menu_color-t{
+    background: $menu_color-t;
+}
+.row__menu{
+    text-align: center;
+    justify-content: center;
+}
+.menu__text{
+    color: white;
+    font-size: 1.31rem;
+    font-weight: 700;
+    font-variant: small-caps;
+    cursor: pointer;
+}
+//main
+.main{
+    background: url(/assets/img/main_bg.png);
+    background-position: top;
+    background-size: cover;
+    padding-top: 10rem;
+    position: relative;
+   
+}
+.first-page{
+    background-color: $bg_green;
+}
+.second-page{
+    background-color: $my_header-second;
+}
+.third-page{
+    background-color: $my_header-third;
+}
+.row__main{
+    justify-content: center;
+    text-align: center;
+    height: 41rem;
+}
+.main-h1__item{
+    padding-top: 5rem;
+}
+.main-h1__text{
+    color: white;
+    font-size: 2.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-variant: small-caps;
+}
+.main-h2__text{
+    color: white;
+    font-size: 2rem;
+    font-weight: 400;
+    font-variant: small-caps;
+}
+.red__botton{
+    box-shadow: 0 13px 25px rgba(46, 46, 46, 0.2);
+    border-radius: 1.8rem;
+    background-color: $red_button;
+    /* Style for "Записаться" */
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 1rem;
+    font-variant: small-caps;
+    border: none;
+    cursor: pointer;
+}
+// main_desc
+.main_desc{
+    background: $light_white;
+    padding: 3rem 0;
+}
+.desc-text__item{
+    padding-bottom: 2rem;
+    display: flex;
+}
+.text-item__img{
+    padding-top: 2rem;
+}
+.text-item__h3{
+    color: $main_title;
+    font-size: 2.06rem;
+    font-weight: 400;
+    font-variant: small-caps;
+    border-bottom : 2px solid $red_button
+}
+.desc__item{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1.5rem;
+}
+.desc__item-img{
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 1.5rem;
+}
+.desc-item__text-b{
+    color: $dark;
+    font-size: 1.31rem;
+    font-weight: 700;
+    font-variant: small-caps;
+}
+.desc-item__text{
+    color: $dark;
+    font-size: 1.06rem;
+    font-weight: 300;
+    font-variant: small-caps;
+}
+//trial
+.main_trial{
+    background: $cream_bg;
+}
+.row__trial{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 13.4rem;
+}
+.trial_img{
+     max-width: 10rem;
+     
+}
+.trial_h3{
+    padding-bottom: 1rem;
+    color: $dark;
+    font-size: 1.81rem;
+    font-weight: 400;
+    font-variant: small-caps;
+}
+//main-blocks;
+.blocks__item{
+    text-align: center;
+}
+.blocks__item:nth-child(1){
+    background: $light_blue;
+}
+.blocks__item:nth-child(2){
+    background: $dark_green;
+}
+.blocks__item:nth-child(3){
+    background: $light_blue;
+}
+.blocks__item:nth-child(4){
+    background: $grey_blue;
+}
+.blocks__item:nth-child(5){
+    background:  $my_tomato;
+}
+.block-item__img{
+    padding: 3rem 0;
+}
+.block-item__h4{
+    color:white;
+    font-size: 1.31rem;
+    font-weight: 700;
+    font-variant: small-caps; 
+    padding-bottom: 1rem;
+}
+.block-item__p{
+    color: white;
+    font-size: 1.06rem;
+    font-weight: 300;
+    font-variant: small-caps;
+    padding-bottom: 5rem;
+}
+//footer
+footer{
+    background: $bg_footer;
+}
+.item__text{
+    color: white;
+    font-size: 0.93rem;
+    font-weight: 700;
+    font-variant: small-caps;
+}
+.item__box{
+    display: block;
+}
+.row__footer{
+    align-items: center;
+    padding: 2rem 0;
+    height: 100%;
+}
+.item__h5{
+    font-size: 1.06rem;
+    color: white;
+    font-weight: 700;
+    font-variant: small-caps;
+}
+.li__item{
+    padding-bottom: 0.5rem;
+}
+.white_button{
+    box-shadow: 0 13px 25px rgba(51, 51, 51, 0.2);
+    border-radius: 1.125rem;
+    border: 2px solid #e8fffe;
+    width: 12rem;
+    height: 2.25rem;
+    background: none;
+    color: white;
+    font-weight: 400;
+    font-variant: small-caps;
+    font-size: 0.8rem;
+}
+.arrow__box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.arrow__items{
+    padding-top: 3rem;
+}
+.item__padding{
+    padding-bottom: 1.5rem;
+}
+//price
+.row_lesson{
+ justify-content: center;
+ padding-bottom: 3rem;
+}
+.lesson-block__h3{
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+}
+//choose
+.row__choose{
+    justify-content: center;
+    padding-top: 5rem;
+    text-align: center;
+}
+.row__card{
+    justify-content: center;
+    position: relative;
+    height: 30rem;
+    overflow: hidden;
+    
+}
+.choose_lesson{
+    background-color: $card-bg;
+    background-image: url(/assets/img/price_bg.png);
+}
+.card-item{
+    background: white;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    padding-left: 0;
+    padding-right: 0;
+    box-shadow: 0 3px 6px rgba(46, 46, 46, 0.13);
+    border-radius: 9px;
+    position: absolute;
+    transform: translateX(200%);
+    transition: all 1.5s ease-out;
+}
+.card-item:nth-child(1){
+     margin-left: 1rem;
+     transform: translateX(0);
+}
+.card-item:nth-child(2){
+    margin-left: 0.5rem;
+}
+.card-item:nth-child(3){
+    margin-left: 1rem;
+}
+.card-item:nth-child(4){
+    margin-left: 0.5rem;
+}
+.switch{
+    transform: translateX(0);
+}
+.left-block{
+    border-right: 1px solid #ebebeb;
+    padding-right: 1rem;
+}
+.right_h3{
+    color: $main_title;
+    font-size: 1.56rem;
+    font-weight: 700;
+    font-variant: small-caps;
+    padding-bottom: 0.5rem;
+}
+.right_p{
+    color: $main_title;
+    font-size: 1.18rem;
+    font-weight: 400;
+    font-variant: small-caps;
+    padding-bottom: 0.5rem;
+}
+.up-block{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.down-block{
+    display: flex;
+    justify-content: space-between;
+    background: $bottom-card;
+    padding: 0.9rem 1rem;
+}
+.down_p{
+    color: $main_title;
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-variant: small-caps;
+}
+.red__bottom-sm-card{
+    box-shadow: 0 13px 25px rgba(46, 46, 46, 0.2);
+    border-radius: 1.8rem;
+    background-color: $red_button;
+    /* Style for "Записаться" */
+    color: white;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    font-variant: small-caps;
+    border: none;
+    cursor: pointer; 
+}
+input[type="submit"]:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+.red__bottom-sm{
+    box-shadow: 0 13px 25px rgba(46, 46, 46, 0.2);
+    border-radius: 1.8rem;
+    background-color: $sm-bottom;
+    /* Style for "Записаться" */
+    color: $sm-bottom-f;
+    font-size: 1rem;
+    font-weight: 400;
+    padding: 0.5rem 1rem;
+    font-variant: small-caps;
+    border: none;
+    cursor: pointer;
+}
+.redActive{
+    background-color: $red_button;
+    color: white;
+}
+//question
+.main_questions{
+    background-color: $bg-color-blue;
+    transition: all 0.5s;
+    padding: 2rem 0;
+}
+.quest-block{
+    text-align: center;
+    
+}
+.row__quest{
+    justify-content: space-around;
+}
+.quest-block__item{
+    box-shadow: 0 13px 25px rgba(46, 46, 46, 0.13);
+    border-radius: 0.68rem;
+    background-color: $bottom-card;
+    margin-bottom: 0.5rem;
+    padding: 1rem 0;
+}
+.quest-block__item:hover .quest-p__text{
+   transition: all 0.5s;
+}
+.text-hide{
+    display: none;
+}
+
+.quest-p__text{
+    color: $main_title;
+    font-size: 1.12rem;
+    font-weight: 400;
+    font-variant: small-caps;
+    transition: all 0.5s;
+}
+.quest_h3{
+    color: #ffffff;
+    font-size: 1.56rem;
+    font-weight: 700;
+    font-variant: small-caps;
+    padding-bottom: 3rem;
+}
+//contact
+.main_contact{
+    background: $card-bg;
+}
+.row__contact{
+    padding: 2rem 0 ;
+    text-align: center;
+    
+}
+.contact__item-text{
+    color: $main_title;
+    font-size: 1.18rem;
+    font-weight: 500;
+    font-variant: small-caps;
+}
+
+
+@media (max-width: 575.98px) { 
+      html{
+          font-size: 7px;
+      }
+ }
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+
+ }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+
+ }
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) { 
+
+ }
